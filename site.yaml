@@ -1,7 +1,7 @@
 ---
 - hosts: web
   sudo: yes
-  gather_facts: no
+  gather_facts: yes
   roles:
     - role: rajesh.role1
     - role: bennojoy.mysql
