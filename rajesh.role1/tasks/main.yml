@@ -1,11 +1,5 @@
 ---
-  - name: Install the httpd apps
-    yum: name=httpd use_backend=yum state=present
-  - name: start the httpd service
-    service: name=httpd state=started
-  - name: example copying file with owner and permissions
+  - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
     copy:
-      src: /opt/test.sh
-      dest: /tmp/test.sh
-      mode: 0644
-  - script: /tmp/test.sh 
+      content: hello worldn
+      dest: /tmp/testfile.txt
