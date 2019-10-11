@@ -1,6 +1,6 @@
 ---
   - name: Install the httpd apps
-    yum: name=httpd
+    yum: name=httpd use_backend=yum state=present
   - name: start the httpd service
     service: name=httpd state=started
   - name: example copying file with owner and permissions
