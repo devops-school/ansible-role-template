@@ -2,7 +2,7 @@
 - hosts: web
   gather_facts: false
   connection: local
-  become: yes
+  become: no
   roles:
     - role: rajesh.role1
     - role: bennojoy.mysql
